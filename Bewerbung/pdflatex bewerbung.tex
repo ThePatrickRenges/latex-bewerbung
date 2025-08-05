@@ -4,41 +4,51 @@
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{calligra}     % Für Schreibschrift
+\usepackage{graphicx}     % Optional für Bilder
 
-% KOMA-Einstellungen
- \KOMAoptions{
-  foldmarks=BLMT,       % Falz- und Lochmarken nach DIN 5008
+\setlength{\parskip}{0.8\baselineskip}
+\setlength{\parindent}{0pt}
+
+\KOMAoptions{
+  foldmarks=BLMT,
   fromalign=right,
-  fromphone=true,
-  fromemail=true
+  fromphone=false,
+  fromemail=false,
+  backaddress=false
 }
 
-% Absenderdaten
+% Absender
 \setkomavar{fromname}{Eveline Renges}
-\setkomavar{fromaddress}{Schwalbenhälde 26 \\74354 Besigheim}
-\setkomavar{fromphone}{+49 176 478 56446}
-\setkomavar{fromemail}{evelinerenges@proton.me}
+\setkomavar{fromaddress}{Schwalbenhälde 26 \\ 74354 Besigheim}
 \setkomavar{place}{Besigheim}
 \setkomavar{date}{\today}
-\setkomavar{signature}{Eveline Renges}
-\setkomavar{subject}{Bewerbung als IT-Fachkraft für nachhaltige Softwareprojekte}
+
+% Signatur in 12pt Schreibschrift
+\setkomavar{signature}{{\fontsize{16pt}{14pt}\selectfont\textcalligra{Eveline Renges}}}
+
+% Betreffzeile
+\setkomavar{subject}{Bewerbung um einen Minijob im Homeoffice – Datenerfassung}
 
 \begin{document}
 
 \begin{letter}{
-  Firma Zukunft GmbH\\
-  Personalabteilung\\
-  Zukunftsweg 42\\
-  54321 Technikstadt
+  MMHp Consulting GmbH\\
+  Forchenrainstraße 8\\
+  70839 Gerlingen\\
+  Deutschland
 }
 
 \opening{Sehr geehrte Damen und Herren,}
 
-mit großem Interesse habe ich Ihre Stellenanzeige gelesen und möchte mich hiermit auf die ausgeschriebene Position im Bereich Softwareentwicklung bewerben.
+mit Interesse habe ich Ihre Anzeige für einen Minijob im Bereich Datenerfassung und digitale Büroarbeit gelesen. Die flexible Tätigkeit im Homeoffice spricht mich sehr an und passt ideal zu meiner strukturierten Arbeitsweise.
 
-Ich bringe umfassende Erfahrung mit modernen GNU/Linux-Systemen, ethischen Open-Source-Projekten sowie dokumentenbasierter Softwareentwicklung mit LaTeX mit. Besonders Ihre Ausrichtung auf nachhaltige und gesellschaftlich sinnvolle IT-Lösungen spricht mich an.
+Ich bin zuverlässig, arbeite sorgfältig und bringe solide Kenntnisse in Microsoft Excel und Word mit. Auch die digitale Ablage, das Prüfen von Formularen sowie die Organisation von E-Mails gehören zu Aufgaben, die ich effizient umsetzen kann.
 
-Gerne überzeuge ich Sie in einem persönlichen Gespräch von meiner Motivation, meinem Hintergrund und meiner Offenheit für eine zukunftsorientierte Zusammenarbeit.
+Die Aussicht auf eine klare Einarbeitung, flexible Arbeitszeiten und ein dauerhaftes Engagement auf Minijob-Basis motivieren mich besonders. Gerne bringe ich mich engagiert in Ihr Team ein und übernehme die übertragenen Aufgaben verantwortungsvoll.
+
+Ich freue mich auf die Gelegenheit, mich Ihnen in einem Gespräch oder Videocall persönlich vorzustellen.
 
 \closing{Mit freundlichen Grüßen}
 

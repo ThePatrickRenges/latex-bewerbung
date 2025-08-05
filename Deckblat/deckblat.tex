@@ -5,47 +5,45 @@
 \usepackage[a4paper,margin=2.5cm]{geometry}
 \usepackage{parskip}
 \usepackage{helvet}
-\usepackage{mwe} % Für Beispielbild
-\renewcommand{\familydefault}{\sfdefault} % serifenlose Schrift
+\renewcommand{\familydefault}{\sfdefault} % Serifenlose Schrift
 
 \begin{document}
 \thispagestyle{empty} % Keine Kopf-/Fußzeile
 
-% Bewerbungsbild
-\begin{flushright}
-  % Entweder eigenes Foto (im gleichen Ordner) ...
-  \IfFileExists{bewerbungsfoto.jpg}{
-    \includegraphics[width=4cm]{bewerbungsfoto.jpg}
-  }{
-    % ... oder Platzhalter anzeigen
-    \includegraphics[width=4cm]{img/606-6061286_clipart-library-stock-linux-logo-png-transparent-svg.png}
-  }
-\end{flushright}
+\vspace*{1cm}
 
-\vspace*{2cm}
-
-% Titel
+% Titel oben
 \begin{center}
-  {\LARGE \textbf{Bewerbung}}\\[0.5cm]
-  {\Large \textbf{als Webentwickler}} % <— Anpassen nach Bedarf
+  {\Huge \textbf{Bewerbung}}\\[0.3cm]
+  {\large um einen Minijob im Homeoffice}\\[0.2cm]
+  {\large im Bereich \textbf{Datenerfassung und digitale Büroarbeit}}
 \end{center}
 
-\vspace{2cm}
+\vspace{1.8cm}
 
-% Persönliche Angaben
-\noindent
-\textbf{Patrick Renges} \\
-Schwalbenhälde 26\\
-74354 Besigheim \\
-Telefon: 01234 / 56789 \\
-E-Mail: evelinerenges@proton.me \\
-%GitHub: \texttt{github.com/patrick} \\
-%LinkedIn: \texttt{linkedin.com/in/patrick-renges}
+% Bewerbungsbild zentriert
+\begin{center}
+  \includegraphics[width=6.5cm]{img/Bewerbungsfoto.jpg} % ← Pfad ggf. anpassen
+\end{center}
 
 \vfill
 
-\begin{flushright}
-\today
-\end{flushright}
+% Persönliche Angaben unten
+\begin{center}
+  \textbf{Eveline Renges} \\
+  Schwalbenhälde 26\\
+  74354 Besigheim \\
+  Telefon: +49 176 478 56446\\
+  E-Mail: evelinerenges@proton.me \\
+  % GitHub: \texttt{github.com/patrick-renges} \\
+  % LinkedIn: \texttt{linkedin.com/in/patrick-renges}
+\end{center}
+
+\vspace{1cm}
+
+% Datum
+\begin{center}
+  \today
+\end{center}
 
 \end{document}
