@@ -1,0 +1,51 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{parskip}
+\usepackage{helvet}
+\usepackage{mwe} % Für Beispielbild
+\renewcommand{\familydefault}{\sfdefault} % serifenlose Schrift
+
+\begin{document}
+\thispagestyle{empty} % Keine Kopf-/Fußzeile
+
+% Bewerbungsbild
+\begin{flushright}
+  % Entweder eigenes Foto (im gleichen Ordner) ...
+  \IfFileExists{bewerbungsfoto.jpg}{
+    \includegraphics[width=4cm]{bewerbungsfoto.jpg}
+  }{
+    % ... oder Platzhalter anzeigen
+    \includegraphics[width=4cm]{img/606-6061286_clipart-library-stock-linux-logo-png-transparent-svg.png}
+  }
+\end{flushright}
+
+\vspace*{2cm}
+
+% Titel
+\begin{center}
+  {\LARGE \textbf{Bewerbung}}\\[0.5cm]
+  {\Large \textbf{als Webentwickler}} % <— Anpassen nach Bedarf
+\end{center}
+
+\vspace{2cm}
+
+% Persönliche Angaben
+\noindent
+\textbf{Patrick Renges} \\
+Musterstraße 1 \\
+12345 Musterstadt \\
+Telefon: 01234 / 56789 \\
+E-Mail: patrick@example.com \\
+GitHub: \texttt{github.com/patrick} \\
+LinkedIn: \texttt{linkedin.com/in/patrick-renges}
+
+\vfill
+
+\begin{flushright}
+\today
+\end{flushright}
+
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper,parskip=half]{scrlttr2}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% KOMA-Einstellungen
+ \KOMAoptions{
+  foldmarks=BLMT,       % Falz- und Lochmarken nach DIN 5008
+  fromalign=right,
+  fromphone=true,
+  fromemail=true
+}
+
+% Absenderdaten
+\setkomavar{fromname}{Max Mustermann}
+\setkomavar{fromaddress}{Musterstraße 1\\12345 Musterstadt}
+\setkomavar{fromphone}{+49 123 456789}
+\setkomavar{fromemail}{max@example.com}
+\setkomavar{place}{Musterstadt}
+\setkomavar{date}{\today}
+\setkomavar{signature}{Max Mustermann}
+\setkomavar{subject}{Bewerbung als IT-Fachkraft für nachhaltige Softwareprojekte}
+
+\begin{document}
+
+\begin{letter}{
+  Firma Zukunft GmbH\\
+  Personalabteilung\\
+  Zukunftsweg 42\\
+  54321 Technikstadt
+}
+
+\opening{Sehr geehrte Damen und Herren,}
+
+mit großem Interesse habe ich Ihre Stellenanzeige gelesen und möchte mich hiermit auf die ausgeschriebene Position im Bereich Softwareentwicklung bewerben.
+
+Ich bringe umfassende Erfahrung mit modernen GNU/Linux-Systemen, ethischen Open-Source-Projekten sowie dokumentenbasierter Softwareentwicklung mit LaTeX mit. Besonders Ihre Ausrichtung auf nachhaltige und gesellschaftlich sinnvolle IT-Lösungen spricht mich an.
+
+Gerne überzeuge ich Sie in einem persönlichen Gespräch von meiner Motivation, meinem Hintergrund und meiner Offenheit für eine zukunftsorientierte Zusammenarbeit.
+
+\closing{Mit freundlichen Grüßen}
+
+\end{letter}
+
+\end{document}
